@@ -15,7 +15,7 @@ const nav: ThemeConfig['nav'] = [
       { text: 'Интерактивный учебник', link: '/tutorial/' },
       { text: 'Примеры', link: '/examples/' },
       { text: 'Быстрый старт', link: '/guide/quick-start' },
-      // { text: 'Style Guide', link: '/style-guide/' },
+      { text: 'Style Guide', link: '/style-guide/' },
       {
         text: 'Документация для Vue 2',
         link: 'https://ru.vuejs.org/'
@@ -657,14 +657,14 @@ export default defineConfigWithTheme<ThemeConfig>({
       }
     ],
 
-    // algolia: {
-    //   indexName: 'vuejs_ru',
-    //   appId: 'ML0LEBN7FQ',
-    //   apiKey: 'f49cbd92a74532cc55cfbffa5e5a7d01',
-    //   searchParameters: {
-    //     facetFilters: ['version:v3']
-    //   }
-    // },
+    algolia: {
+      indexName: 'vuejs',
+      appId: 'ML0LEBN7FQ',
+      apiKey: 'f49cbd92a74532cc55cfbffa5e5a7d01',
+      searchParameters: {
+        facetFilters: ['version:v3']
+      }
+    },
 
     // carbonAds: {
     //   code: 'CEBDT27Y',
